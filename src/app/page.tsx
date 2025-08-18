@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="relative flex h-screen w-full items-center justify-center bg-white dark:bg-black overflow-hidden">
       <FollowerPointerCard
-        title={<TitleComponent title="Laurent Maxhuni" avatar="/favicon.ico" />}
+        title={<TitleComponent title="Laurent Maxhuni" avatar="/favicon-32x32.png" />}
         className="w-full h-full"
       >
         <div
@@ -25,14 +25,16 @@ export default function Home() {
           )}
         />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
-        <div className="flex flex-col items-center justify-center h-[90%] text-center relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-2 font-bold">
+        <div className="flex flex-col items-center justify-center h-[90%] text-center relative bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-2 font-bold">
           <h1 className="text-3xl md:text-6xl font-bold mb-4">
             Hello, I am Laurent Maxhuni!👋
           </h1>
           <h1 className="text-3xl md:text-6xl font-bold mb-4">
             and I am <ContainerTextFlip />
           </h1>
-          <p className="text-gray-500">(I don&apos;t know how to fix your printer)</p>
+          <p className="text-gray-500">
+            (I don&apos;t know how to fix your printer)
+          </p>
         </div>
       </FollowerPointerCard>
       <FloatingDock
@@ -64,7 +66,7 @@ export default function Home() {
           },
         ]}
         desktopClassName="fixed bottom-0 left-[50%] -translate-[50%] bg-gray-800 p-4"
-        mobileClassName="fixed bottom-0 left-[50%] -translate-[50%] p-4 flex items-cetner justify-center"
+        mobileClassName="fixed bottom-0 right-0 p-4 flex items-cetner justify-center"
       />
     </div>
   );

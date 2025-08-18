@@ -18,13 +18,28 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
-    other: {
-      rel: "icon",
-      url: "/favicon.ico",
-    },
+    other: [
+      {
+        rel: "icon",
+        url: "/favicon-16x16.png",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-32x32.png",
+      },
+      {
+        rel: "icon",
+        url: "/android-chrome-192x192.png",
+      },
+      {
+        rel: "icon",
+        url: "/android-chrome-512x512.png",
+      },
+    ],
   },
   title: "✨Laurent Maxhuni | Full Stack Developer ✨",
-  description: "A 15 year old full stack developer from Kosovo, with a single goal: to help humanity achieve its full potential.",
+  description:
+    "A 15 year old full stack developer from Kosovo, with a single goal: to help humanity achieve its full potential.",
   applicationName: "Laurent Maxhuni - Portfolio",
   keywords: [
     "full stack developer",
@@ -34,14 +49,12 @@ export const metadata: Metadata = {
     "laurent maxhuni",
     "portfolio",
     "developer",
-    "programmer"
+    "programmer",
   ],
-  "verification": {
-    "google": "",
-    "other": {
-      
-    }  
-  }
+  verification: {
+    google: "",
+    other: {},
+  },
 };
 
 export default function RootLayout({
