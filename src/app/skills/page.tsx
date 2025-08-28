@@ -1,15 +1,18 @@
+"use client";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { HomeIcon, InfoIcon, PhoneIcon, PowerCircleIcon } from "lucide-react";
-import { IconSlideshow } from "@tabler/icons-react";
+import { IconHtml, IconSlideshow } from "@tabler/icons-react";
 import { FollowerPointerCard } from "@/components/ui/following-pointer";
 import TitleComponent from "@/components/title-component";
 import { cn } from "@/lib/utils";
+import { ProgressProvider } from "@bprogress/next/app";
+import { Bar, Progress } from "@bprogress/next"
 
 export default function Skills() {
   return (
     <div className="relative flex h-screen w-full items-center justify-center bg-white dark:bg-black overflow-hidden">
       <FollowerPointerCard
-        title={<TitleComponent title="Laurent Maxhuni" avatar="/favicon.ico" />}
+        title={<TitleComponent title="Laurent Maxhuni" avatar="/favicon-32x32.png" />}
         className="w-full h-full"
       >
         <div
@@ -21,6 +24,13 @@ export default function Skills() {
           )}
         />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+        <div className="flex flex-col items-center justify-center h-[90%] z-10 relative">
+          <ProgressProvider options={{
+            template: null,
+          }}>
+            <Progress />
+          </ProgressProvider>
+        </div>
       </FollowerPointerCard>
       <FloatingDock
         items={[

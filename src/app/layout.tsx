@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Providers from "./providers";
+
 
 const interSans = Inter({
   variable: "--font-inter-sans",
@@ -73,7 +75,7 @@ export default function RootLayout({
           disableTransitionOnChange
           defaultTheme="system"
         >
-          {children}
+          <Providers>{children}</Providers>
         </ThemeProvider>
       </body>
     </html>
