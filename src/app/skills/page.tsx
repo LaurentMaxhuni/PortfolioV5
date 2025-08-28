@@ -25,11 +25,6 @@ export default function Skills() {
         />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
         <div className="flex flex-col items-center justify-center h-[90%] z-10 relative">
-          <ProgressProvider options={{
-            template: null,
-          }}>
-            <Progress />
-          </ProgressProvider>
         </div>
       </FollowerPointerCard>
       <FloatingDock
