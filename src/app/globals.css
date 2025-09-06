@@ -1,7 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
+@keyframes grow {
+  from { width: 0%; }
+  to { width: 90%; }
+}
 
 @custom-variant dark (&:is(.dark *));
 
