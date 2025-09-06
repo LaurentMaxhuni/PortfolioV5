@@ -67,8 +67,8 @@ export const FollowPointer = ({
   y,
   title,
 }: {
-  x: any;
-  y: any;
+  x: never;
+  y: never;
   title?: string | React.ReactNode;
 }) => {
   const colors = ["#37383b"];
