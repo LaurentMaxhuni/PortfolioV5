@@ -25,17 +25,105 @@ export default function Skills() {
           )}
         />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
-        <div className="flex flex-col overflow-auto items-center justify-center h-[90%] max-h-[90%] z-10 relative py-[35px]">
-          <h1 className="text-6xl md:text-3xl font-bold">My Skills!</h1>
-          <div>
-            <SkillsBar text="HTML" colors={["bg-orange-600", "bg-orange-900"]} percentage={100} />
-          <SkillsBar text="CSS" colors={["bg-blue-600", "bg-blue-900"]} percentage={95} />
-          <SkillsBar text="JavaScript" colors={["bg-yellow-600", "bg-yellow-900"]} percentage={90} />
-          <SkillsBar text="TypeScript" colors={["bg-blue-400", "bg-blue-800"]} percentage={85} />
-          <SkillsBar text="React" colors={["bg-sky-400", "bg-sky-800"]} percentage={80} />
-          <SkillsBar text="Next.js" colors={["bg-white", "bg-gray-800"]} percentage={75} />
-          <SkillsBar text="Node.js" colors={["bg-green-600", "bg-green-900"]} percentage={70} />
-          <SkillsBar text="Python" colors={["bg-yellow-300", "bg-yellow-600"]} percentage={60} />
+        <div className="flex flex-col overflow-auto items-center justify-center h-[90%] z-10 relative">                                                   
+          <h1 className="text-6xl md:text-3xl font-bold mb-2">My Skills!</h1>
+          <div className="flex flex-col overflow-y-auto h-[85%] items-center justify-start w-full">
+            <SkillsBar
+              text="HTML"
+              colors={[
+                "bg-gradient-to-r from-amber-400 to-orange-600",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={100}
+            />
+            <SkillsBar
+              text="CSS"
+              colors={[
+                "bg-gradient-to-r from-sky-400 to-blue-600",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={95}
+            />
+            <SkillsBar
+              text="JavaScript"
+              colors={[
+                "bg-gradient-to-r from-yellow-400 to-amber-500",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={90}
+            />
+            <SkillsBar
+              text="React JS"
+              colors={[
+                "bg-gradient-to-r from-cyan-400 to-sky-600",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={85}
+            />
+            <SkillsBar
+              text="Python"
+              colors={[
+                "bg-gradient-to-r from-amber-300 to-yellow-500",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={60}
+            />
+            <SkillsBar
+              text="Git"
+              colors={[
+                "bg-gradient-to-r from-orange-500 to-red-500",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={80}
+            />
+            <SkillsBar
+              text="GitHub"
+              colors={[
+                "bg-gradient-to-r from-zinc-400 to-zinc-700",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={80}
+            />
+            <SkillsBar
+              text="VSCode"
+              colors={[
+                "bg-gradient-to-r from-sky-400 to-blue-700",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={85}
+            />
+            <SkillsBar
+              text="Tailwind CSS"
+              colors={[
+                "bg-gradient-to-r from-cyan-400 to-teal-500",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={85}
+            />
+            <SkillsBar
+              text="Bootstrap 5"
+              colors={[
+                "bg-gradient-to-r from-purple-400 to-violet-700",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={75}
+            />
+            <SkillsBar
+              text="jQuery"
+              colors={[
+                "bg-gradient-to-r from-indigo-400 to-blue-600",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={70}
+            />
+            <SkillsBar
+              text="Node.js"
+              colors={[
+                "bg-gradient-to-r from-emerald-400 to-green-700",
+                "bg-neutral-200/60 dark:bg-white/10",
+              ]}
+              percentage={70}
+            />
           </div>
         </div>
       </FollowerPointerCard>
